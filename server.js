@@ -23,9 +23,9 @@ var todos = ['new'];
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : '172.22.1.158',
-    user     : 'demoadmin',
-    password : 'Hello123!',
+    host     : '172.21.217.219',
+    user     : 'admin',
+    password : 'admin',
     database : 'sampledb',
     multipleStatements: true
 }); 
