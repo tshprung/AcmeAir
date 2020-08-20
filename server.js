@@ -190,9 +190,9 @@ app.get('/clear_feedbacks', (req, res) => {
     else {
       console.log("Sucessfully initiaized CNAF rule in Twistlock");
    }
-  });
+  });*/
   res.redirect('/');
-}); */
+});
 
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
