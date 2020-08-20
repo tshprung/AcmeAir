@@ -23,9 +23,9 @@ var todos = ['new'];
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : '172.21.217.219',
+    host     : 'sampledb.ch7vblzai1mf.us-west-2.rds.amazonaws.com',
     user     : 'admin',
-    password : 'admin',
+    password : '1qazZAQ1',
     database : 'sampledb',
     multipleStatements: true
 }); 
@@ -183,7 +183,7 @@ app.get('/clear_feedbacks', (req, res) => {
     text: "Dummy",
     scan_results: ""
   };
-  this.invokeTwistlock(alertdata, function(err, data) {
+ /* this.invokeTwistlock(alertdata, function(err, data) {
     if (err) {
       console.log("Failed to initialize CNAF Rule in Twistlock: " + err);
     }
@@ -192,7 +192,7 @@ app.get('/clear_feedbacks', (req, res) => {
    }
   });
   res.redirect('/');
-});
+}); */
 
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
