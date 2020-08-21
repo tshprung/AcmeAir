@@ -23,9 +23,9 @@ var todos = ['new'];
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : 'sampledb.ch7vblzai1mf.us-west-2.rds.amazonaws.com',
+    host     : '172.21.217.219',
     user     : 'admin',
-    password : '1qazZAQ1',
+    password : 'admin',
     database : 'sampledb',
     multipleStatements: true
 }); 
@@ -183,14 +183,14 @@ app.get('/clear_feedbacks', (req, res) => {
     text: "Dummy",
     scan_results: ""
   };
- /* this.invokeTwistlock(alertdata, function(err, data) {
+  this.invokeTwistlock(alertdata, function(err, data) {
     if (err) {
       console.log("Failed to initialize CNAF Rule in Twistlock: " + err);
     }
     else {
       console.log("Sucessfully initiaized CNAF rule in Twistlock");
    }
-  });*/
+  });
   res.redirect('/');
 });
 
